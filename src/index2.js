@@ -1,0 +1,1 @@
+export const testing = "You have linked the files."
