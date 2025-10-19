@@ -1,16 +1,8 @@
 import "./styles.css";
+import { loadHomePage } from "./home.js";
+loadHomePage();
 
 
+// import { testing } from "./index2.js";
 
-import {testing} from "./index2.js";
-
-console.log(testing)
-
-
-// src/index.js
-// import odinImage from "./odin.png";
-   
-// const image = document.createElement("img");
-// image.src = odinImage;
-   
-// document.body.appendChild(image);
+// console.log(testing)
