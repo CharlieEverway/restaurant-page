@@ -1,37 +1,41 @@
 import "./styles.css";
 import { loadHomePage } from "./home.js";
+import { loadMenuPage } from "./menu.js";
+import { loadAboutPage } from "./about.js";
+
+let currentPage = 'home';
+
 loadHomePage();
 
-
-// import { testing } from "./index2.js";
-
-// console.log(testing)
-
-
-//when page loads, load homepage
-//when a button is clicked (event listeners) wipe the DOM 
-//load the next export function
+function clearContent() {
+    document.getElementById('content').textContent = '';
+}
 
 const homeButton = document.getElementById('home');
 function homeClicked() {
-    alert('home was clicked!');
+    if (currentPage === 'home') return;
+    currentPage = 'home';
+    clearContent()
     loadHomePage();
 }
 homeButton.addEventListener('click', homeClicked);
-//STOP ANY DOUBLE LOADING
 
 const menuButton = document.getElementById('menu');
 function menuClicked() {
-    alert('menu was clicked!');
-    document.getElementById('content').innerHTML = '';
+    if (currentPage === 'menu') return;
+    currentPage = 'menu';
+    clearContent();
+    loadMenuPage();
 }
 menuButton.addEventListener('click', menuClicked);
 
 
 const aboutButton = document.getElementById('about');
 function aboutClicked() {
-    alert('about was clicked!');
-    document.getElementById('content').innerHTML = '';
+    if (currentPage === 'about') return;
+    currentPage = 'about';
+    clearContent();
+    loadAboutPage();
 }
 aboutButton.addEventListener('click', aboutClicked);
 
@@ -39,8 +43,13 @@ aboutButton.addEventListener('click', aboutClicked);
 const bookButton = document.getElementById('bookingButton');
 function bookButtonClicked() {
     alert('book was clicked!');
-    document.getElementById('content').innerHTML = '';
 }
 bookButton.addEventListener('click', bookButtonClicked);
 
 //navbar buttons
+
+// next steps:
+// flesh out the design of the other pages
+// configure css
+// design a menu, basic about page and button functionality (popup?)
+//finish
