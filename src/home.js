@@ -37,7 +37,6 @@ export function loadHomePage() {
 
     const headerImg = document.createElement('img');
     headerImg.src = ramenImg;
-    headerImg.width = 300;
     headerImg.id = 'header-img';
     homeContentArea.appendChild(headerImg);
     //header img
