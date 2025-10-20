@@ -39,13 +39,6 @@ function aboutClicked() {
 }
 aboutButton.addEventListener('click', aboutClicked);
 
-
-const bookButton = document.getElementById('bookingButton');
-function bookButtonClicked() {
-    alert('book was clicked!');
-}
-bookButton.addEventListener('click', bookButtonClicked);
-
 //navbar buttons
 
 // next steps:
