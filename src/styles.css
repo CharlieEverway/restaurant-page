@@ -1,4 +1,67 @@
 /* styles.css */
 body {
-  background-color: rebeccapurple;
+  background-color: #0A0A0A;
+  margin: 0;
+  color: #F5F5F5;
+  height:100%;
+}
+
+header {
+  background: #0A0A0A;
+  color: #00FFFF;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: nowrap;
+  min-width: 500px;
+}
+
+#logo-text {
+  font-family: 'Righteous', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #00FFFF;
+  text-shadow: 0 0 5px #00FFFF, 0 0 15px #00FFFF;
+  text-wrap: nowrap;
+  padding-right: 20px;
+
+}
+
+#buttons-right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+
+}
+
+.navbutton {
+  color: #00FFFF;
+  border: 2px solid #00FFFF;
+  background: transparent;
+  text-shadow: 0 0 8px #00FFFF;
+}
+
+.navbutton:hover {
+  color: #FF00FF;
+  border-color: #FF00FF;
+  text-shadow: 0 0 10px #FF00FF;
+  cursor: pointer;
+}
+
+
+
+#headline-content{
+  display:flex;
+  flex-direction: column;
+}
+
+*{
+  border:solid 1px red;
+}
+#home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
 }

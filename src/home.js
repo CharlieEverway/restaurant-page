@@ -3,17 +3,14 @@ import ramenImg from './ramen.png';
 export function loadHomePage() {
     const contentArea = document.querySelector('#content')
     //content area
-
-    const headerImg = document.createElement('img');
-    headerImg.src = ramenImg;
-    headerImg.width = 300;
-    headerImg.id = 'header-img';
-    contentArea.appendChild(headerImg);
-    //header img
+    const homeContentArea = document.createElement('div');
+    homeContentArea.id = "home-content"
+    contentArea.appendChild(homeContentArea)
+    //home content area
 
     const headlineContent = document.createElement('div');
     headlineContent.id = "headline-content";
-    contentArea.appendChild(headlineContent);
+    homeContentArea.appendChild(headlineContent);
 
     const headline = document.createElement('div');
     headline.textContent = "Enjoy Our Delicious Ramen."
@@ -35,7 +32,16 @@ export function loadHomePage() {
     const bookingButton = document.createElement('button');
     bookingButton.textContent = "Book A Table"
     bookingButton.className = 'booking-button';
-    contentArea.appendChild(bookingButton)
+    headlineContent.appendChild(bookingButton)
     //headline subtext
+
+    const headerImg = document.createElement('img');
+    headerImg.src = ramenImg;
+    headerImg.width = 300;
+    headerImg.id = 'header-img';
+    homeContentArea.appendChild(headerImg);
+    //header img
+
+
 }
 
