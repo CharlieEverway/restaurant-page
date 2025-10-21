@@ -26,9 +26,4 @@ export function loadMenuPage() {
         cards.appendChild(card);
     });
 
-    const bookingButton = document.createElement('button');
-    bookingButton.textContent = "Book A Table"
-    bookingButton.className = 'booking-button';
-    contentArea.appendChild(bookingButton)
-
 }

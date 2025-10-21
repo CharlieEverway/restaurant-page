@@ -68,11 +68,18 @@ header {
   font-size: 18px;
 }
 
-
 #home-content {
-  padding: 50px;
   display: flex;
   gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#home-content img {
+ width:300px;
 }
 
 .booking-button {
@@ -96,11 +103,10 @@ header {
   box-shadow: 0 0 20px #00FFFF, 0 0 5px #00FFFF;
 }
 
-#home-content img {
+#headline-content .booking-button {
   display: block;
-  width: 500px;
+  margin: 0 auto;
 }
-
 
 /* home content */
 
@@ -108,20 +114,13 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  /* space between cards */
   padding: 2rem;
-  /* breathing room around grid */
   max-width: 1000px;
-  /* keeps layout from stretching too wide */
   margin: 0 auto;
-  /* centers container */
-
 }
-
 
 .card {
   background-color: #111;
-  /* or something on-brand neon if that’s your theme */
   color: #fff;
   border-radius: 10px;
   padding: 1.5rem;
@@ -136,7 +135,21 @@ header {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
-/* menu contet */
+/* menu content */
 
 
 /* about content */
+#about-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#about-content img {
+  width:500px;
+  border-radius: 10%;
+}
